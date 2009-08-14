@@ -44,6 +44,7 @@ h2 {
     width: 200px;
     top: 40px;
     left: 125px;
+    font-weight: normal;
 }
 
 h2.red {
@@ -93,9 +94,19 @@ ul.arrows li {
 /* @group Layout */
 
 #Container {
-    width: 960px;
     position: relative;
+    width: 960px;
+    height: 600px;
     margin: 0px auto 0px auto;
+}
+
+#Intro {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 960px;
+    height: 600px;
+    z-index: 1;
 }
 
 #Page {
@@ -105,6 +116,7 @@ ul.arrows li {
     width: 350px;
     height: 600px;
     text-align: left;
+    z-index: 2;
 }
 
 #Page #Body {
@@ -115,7 +127,8 @@ ul.arrows li {
 
 #Page div.content {
     height: 470px;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 #Page div.content img {
