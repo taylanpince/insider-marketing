@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Insider Marketing Group</title>
+	
+	<style type="text/css">
+        @import "css/reset.css";
+	    @import "css/screen.css";
+	</style>
+	
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/swfobject.js"></script>
+    <script type="text/javascript" src="js/navigator.js"></script>
+</head>
+
+<body>
+
+<div id="Container">
+    <div id="Intro">
+        <ul>
+            <li><a href="about.html">About Insider</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="promise.html">Insider Promise</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="marketing.html">1 to 1 Marketing</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="team.html">Insider Team</a></li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+    swfobject.embedSWF("flash/intro.swf", "Intro", "960", "600", "8.0.0");
+    
+    var nav = new core.Navigator("#Container");
+    nav.launch_page("promise.html");
+//]]>
+</script>
+
+</body>
+</html>
