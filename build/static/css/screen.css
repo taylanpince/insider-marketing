@@ -107,7 +107,7 @@ ul.arrows li {
     text-align: left;
 }
 
-#Page div.body {
+#Page #Body {
     padding: 110px 20px 20px 20px;
     background-repeat: no-repeat;
     background-position: top left;
@@ -122,52 +122,52 @@ ul.arrows li {
     margin-bottom: 15px;
 }
 
-#Page div.about {
+#Page div#Body.about {
     padding-top: 140px;
     background-color: #cd2027;
     background-image: url("../images/bg-about.png");
 }
 
-#Page div.about div.content {
+#Page div#Body.about div.content {
     height: 440px;
 }
 
-#Page div.contact {
+#Page div#Body.contact {
     background-color: #cd2027;
     background-image: url("../images/bg-contact.png");
 }
 
-#Page div.marketing {
+#Page div#Body.marketing {
     padding-top: 160px;
     background-color: #cbdb2a;
     background-image: url("../images/bg-marketing.png");
 }
 
-#Page div.marketing div.content {
+#Page div#Body.marketing div.content {
     height: 420px;
 }
 
-#Page div.portfolio {
+#Page div#Body.portfolio {
     padding-top: 180px;
     background-color: #9a8c7d;
     background-image: url("../images/bg-portfolio.png");
 }
 
-#Page div.portfolio div.content {
+#Page div#Body.portfolio div.content {
     height: 400px;
 }
 
-#Page div.promise {
+#Page div#Body.promise {
     background-color: #cbdb2a;
     background-image: url("../images/bg-promise.png");
 }
 
-#Page div.team {
+#Page div#Body.team {
     background-color: #9a8c7d;
     background-image: url("../images/bg-team.png");
 }
 
-#Page div.testimonials {
+#Page div#Body.testimonials {
     background-color: #cd2027;
     background-image: url("../images/bg-testimonials.png");
 }

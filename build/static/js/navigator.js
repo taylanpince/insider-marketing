@@ -12,6 +12,7 @@ $.namespace("core.Navigator");
 core.Navigator = $.Class.extend({
     
     selector : "",
+    url : "",
     
     page_template : '<div id="Page"></div>',
 
@@ -25,8 +26,18 @@ core.Navigator = $.Class.extend({
         return template;
     },
     
+    display_page : function() {
+        $(this.selector).find("#Page").fadeIn();
+    },
+    
+    load_page : function() {
+        $(this.selector).find("#Page").load(this.url + " #Body", {}, this.display_page.bind(this));
+    },
+    
     launch_page : function(url) {
-        $(this.selector).find("#Page").load(url);
+        this.url = url;
+
+        $(this.selector).find("#Page").fadeOut("fast", this.load_page.bind(this));
     },
 
     init : function(selector) {
