@@ -16,17 +16,7 @@ core.Navigator = $.Class.extend({
     
     page_template : '<div id="Page"></div>',
 
-    render_template : function(template, values) {
-        for (val in values) {
-            var re = new RegExp("%\\(" + val + "\\)", "g");
-        
-            template = template.replace(re, values[val]);
-        }
-    
-        return template;
-    },
-    
-    display_page : function() {
+    display_page : function(response, status, request) {
         $(this.selector).find("#Page").fadeIn();
     },
     
@@ -35,7 +25,7 @@ core.Navigator = $.Class.extend({
     },
     
     launch_page : function(url) {
-        this.url = url;
+        this.url = url + "?" + (Math.random() * 1000);
 
         $(this.selector).find("#Page").fadeOut("fast", this.load_page.bind(this));
     },
