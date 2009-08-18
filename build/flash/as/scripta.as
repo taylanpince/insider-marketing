@@ -6,7 +6,7 @@ var easeNone = mx.transitions.easing.None.easeNone;
 var easeOut = mx.transitions.easing.Strong.easeOut;
 // var easeInOut = mx.transitions.easing.Strong.easeInOut;
 
-var fMan = new frameMan([2000, 1500, 500, 500, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 500]);
+var fMan = new frameMan([2000, 1500, 1500, 500, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 500]);
 
 //************************************
 // PRELOAD.
@@ -27,6 +27,7 @@ function launchPage() {
 
 fMan.frame[0] = function() { // Intro 1
     tween_fn(intro_1, "_alpha", 100, 1.5, easeNone);
+    tween_fn(intro_15, "_alpha", 100, 1.5, easeNone);
 }
 
 fMan.frame[1] = function() { // Intro 2
@@ -35,10 +36,11 @@ fMan.frame[1] = function() { // Intro 2
 
 fMan.frame[2] = function() { // Intro Fade Out
     tween_fn(intro_1, "_alpha", 0, 0.5, easeNone);
-    tween_fn(intro_2, "_alpha", 0, 0.5, easeNone);
 }
 
 fMan.frame[3] = function() { // Copy, Logo
+    tween_fn(intro_2, "_alpha", 0, 0.5, easeNone);
+    tween_fn(intro_15, "_alpha", 0, 0.5, easeNone);
     tween_fn(copy, "_alpha", 100, 0.5, easeNone);
     tween_fn(logo, "_alpha", 100, 0.5, easeNone);
 }

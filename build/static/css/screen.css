@@ -9,7 +9,7 @@
 
 body {
     text-align: center;
-    font: 11px/18px Verdana, Helvetica, Arial, sans-serif;
+    font: 13px/19px Verdana, Helvetica, Arial, sans-serif;
     color: #fff;
     background-color: #bfd438;
 }
@@ -34,6 +34,11 @@ span.green {
     color: #cadb2a;
 }
 
+p.dark-green,
+span.dark-green {
+    color: #a4b222;
+}
+
 p.red,
 p.red a {
     color: #cb2026;
@@ -41,7 +46,7 @@ p.red a {
 
 h2 {
     position: absolute;
-    width: 200px;
+    width: 250px;
     top: 40px;
     left: 125px;
     font-weight: normal;
@@ -62,7 +67,7 @@ h4 {
 }
 
 ul.columns {
-    width: 295px;
+    width: 345px;
     overflow: hidden;
     position: static;
 }
@@ -70,7 +75,7 @@ ul.columns {
 ul.columns li {
     float: left;
     display: inline;
-    width: 140px;
+    width: 165px;
     margin: 0px 15px 15px 0px;
 }
 
@@ -84,7 +89,7 @@ ul.columns li img {
 }
 
 ul.arrows li {
-    padding-left: 45px;
+    padding-left: 55px;
     background: transparent url("../images/bg-arrow.png") top left no-repeat;
 }
 
@@ -113,20 +118,21 @@ ul.arrows li {
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 350px;
+    width: 400px;
     height: 600px;
     text-align: left;
     z-index: 2;
 }
 
 #Page #Body {
-    padding: 110px 20px 20px 20px;
+    padding: 130px 10px 20px 20px;
     background-repeat: no-repeat;
     background-position: top left;
 }
 
 #Page div.content {
-    height: 470px;
+    height: 450px;
+    padding: 0px 10px 0px 0px;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -152,7 +158,7 @@ ul.arrows li {
 
 #Page div#Body.marketing {
     padding-top: 160px;
-    background-color: #cbdb2a;
+    background-color: #fff;
     background-image: url("../images/bg-marketing.png");
 }
 
@@ -171,7 +177,7 @@ ul.arrows li {
 }
 
 #Page div#Body.promise {
-    background-color: #cbdb2a;
+    background-color: #fff;
     background-image: url("../images/bg-promise.png");
 }
 
