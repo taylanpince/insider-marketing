@@ -15,9 +15,10 @@ core.Navigator = $.Class.extend({
     url : "",
     
     page_template : '<div id="Page"></div>',
+    close_template : '<a href="javascript:void(0);" onclick="nav.close_page();" class="close">X</a>',
 
     display_page : function(response, status, request) {
-        $(this.selector).find("#Page").fadeIn();
+        $(this.selector).find("#Page").append(this.close_template).fadeIn();
     },
     
     load_page : function() {
@@ -28,6 +29,10 @@ core.Navigator = $.Class.extend({
         this.url = url + "?" + (Math.random() * 1000);
 
         $(this.selector).find("#Page").fadeOut("fast", this.load_page.bind(this));
+    },
+    
+    close_page : function() {
+        $(this.selector).find("#Page").fadeOut("fast");
     },
 
     init : function(selector) {

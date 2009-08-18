@@ -66,6 +66,11 @@ h4 {
     margin-bottom: 10px;
 }
 
+h5 {
+    color: #cb2026;
+    margin: 0px 0px 12px 32px;
+}
+
 ul.columns {
     width: 345px;
     overflow: hidden;
@@ -85,7 +90,7 @@ ul.columns li.last-child {
 
 ul.columns li img {
     margin-left: 36px;
-    margin-bottom: 5px !important;
+    margin-bottom: 0px !important;
 }
 
 ul.arrows li {
@@ -122,6 +127,19 @@ ul.arrows li {
     height: 600px;
     text-align: left;
     z-index: 2;
+}
+
+#Page a.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #666;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#Page a.close:hover {
+    color: #333;
 }
 
 #Page #Body {
