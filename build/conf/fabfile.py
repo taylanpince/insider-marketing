@@ -26,8 +26,8 @@ def deploy(hash="HEAD"):
     run("cd $(remote_dir); tar -xzf archive.tar.gz; rm -f archive.tar.gz")
     
     # Deploy the new version
-    run("rm -rf $(remote_dir)/preview")
-    run("mv $(remote_dir)/deploy/build/static $(remote_dir)/preview")
+    run("rm -rf $(remote_dir)/live")
+    run("mv $(remote_dir)/deploy/build/static $(remote_dir)/live")
     run("rm -rf $(remote_dir)/deploy")
 
     # Remove the temporary local directory
