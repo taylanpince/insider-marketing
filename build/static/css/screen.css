@@ -161,13 +161,8 @@ ul.arrows li {
 }
 
 #Page div#Body.about {
-    padding-top: 140px;
     background-color: #cd2027;
     background-image: url("../images/bg-about.png");
-}
-
-#Page div#Body.about div.content {
-    height: 440px;
 }
 
 #Page div#Body.contact {
