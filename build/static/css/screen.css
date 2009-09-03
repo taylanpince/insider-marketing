@@ -160,47 +160,47 @@ ul.arrows li {
     margin-bottom: 15px;
 }
 
-#Page div#Body.about {
+#Page div.about {
     background-color: #cd2027;
     background-image: url("../images/bg-about.png");
 }
 
-#Page div#Body.contact {
+#Page div.contact {
     background-color: #cd2027;
     background-image: url("../images/bg-contact.png");
 }
 
-#Page div#Body.marketing {
+#Page div.marketing {
     padding-top: 160px;
     background-color: #fff;
     background-image: url("../images/bg-marketing.png");
 }
 
-#Page div#Body.marketing div.content {
+#Page div.marketing div.content {
     height: 420px;
 }
 
-#Page div#Body.portfolio {
+#Page div.portfolio {
     padding-top: 180px;
     background-color: #9a8c7d;
     background-image: url("../images/bg-portfolio.png");
 }
 
-#Page div#Body.portfolio div.content {
+#Page div.portfolio div.content {
     height: 400px;
 }
 
-#Page div#Body.promise {
+#Page div.promise {
     background-color: #fff;
     background-image: url("../images/bg-promise.png");
 }
 
-#Page div#Body.team {
+#Page div.team {
     background-color: #9a8c7d;
     background-image: url("../images/bg-team.png");
 }
 
-#Page div#Body.testimonials {
+#Page div.testimonials {
     background-color: #cd2027;
     background-image: url("../images/bg-testimonials.png");
 }
