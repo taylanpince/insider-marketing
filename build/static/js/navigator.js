@@ -36,6 +36,10 @@ core.Navigator = $.Class.extend({
         $(this.selector).find("#Page").fadeOut("fast", this.load_page.bind(this));
     },
     
+    launch_link : function(url) {
+        window.location = url;
+    },
+    
     close_page : function() {
         $(this.selector).find("#Page").fadeOut("fast");
     },

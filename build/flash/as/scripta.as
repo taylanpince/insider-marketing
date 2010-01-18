@@ -25,6 +25,10 @@ function launchPage() {
     getURL("javascript:nav.launch_page('" + this.href + "')");
 }
 
+function launchLink() {
+    getURL("javascript:nav.launch_link('" + this.href + "')");
+}
+
 fMan.frame[0] = function() { // Intro 1
     tween_fn(intro_1, "_alpha", 100, 1.5, easeNone);
     tween_fn(intro_15, "_alpha", 100, 1.5, easeNone);
@@ -65,6 +69,9 @@ fMan.frame[6] = function() { // Promise
 
 fMan.frame[7] = function() { // Box 2
     tween_fn(box_2, "_alpha", 100, 0.5, easeNone);
+
+	box_2.href = "http://blog.insidermarketinggroup.ca";
+	box_2.onRelease = launchLink;
 }
 
 fMan.frame[8] = function() { // Marketing
