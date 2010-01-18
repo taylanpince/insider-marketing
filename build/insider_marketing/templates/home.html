@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block class %}home{% endblock %}
+
+{% block content %}
+<div id="Intro">
+    <h1>Insider Marketing Group</h1>
+    
+    <ul>
+        <li><a href="{% url about %}">About Insider</a></li>
+        <li><a href="{% url contact %}">Contact</a></li>
+        <li><a href="{% url promise %}">Insider Promise</a></li>
+        <li><a href="{% url portfolio %}">Portfolio</a></li>
+        <li><a href="{% url marketing %}">1 to 1 Marketing</a></li>
+        <li><a href="{% url testimonials %}">Testimonials</a></li>
+        <li><a href="{% url team %}">Insider Team</a></li>
+    </ul>
+    
+    <p>Leverage your marketing investment. Build lucrative one-to-one relationships with your clients and reduce costs for years to come.</p>
+    <p>Television, radio, print, outdoor, web… Insider Marketing Group can execute your brand sell and carry that connection through to a personalized ongoing relationship with your audience.</p>
+</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+    swfobject.embedSWF("{{ MEDIA_URL }}flash/intro.swf", "Intro", "960", "600", "8.0.0", false, false, {
+        "wmode": "transparent"
+    });
+    
+    var nav = new core.Navigator("#Body.home");
+//]]>
+</script>
+{% endblock %}

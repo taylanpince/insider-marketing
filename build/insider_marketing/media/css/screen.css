@@ -1,0 +1,217 @@
+/*
+ *	Title: Screen CSS Styles for insidermarketinggroup.com
+ *	Date: August 14, 2009
+ *  Author: Taylan Pince (taylanpince at gmail dot com)
+ */
+
+
+/* @group Global */
+
+body {
+    text-align: center;
+    font: 13px/19px Verdana, Helvetica, Arial, sans-serif;
+    color: #fff;
+    background-color: #bfd438;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+    color: #cadb2a;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    margin: 0px 0px 15px 0px;
+}
+
+p.green,
+span.green {
+    color: #cadb2a;
+}
+
+p.dark-green,
+span.dark-green {
+    color: #a4b222;
+}
+
+p.red,
+p.red a {
+    color: #cb2026;
+}
+
+h2 {
+    position: absolute;
+    width: 250px;
+    top: 40px;
+    left: 125px;
+    font-weight: normal;
+}
+
+h2.red {
+    color: #cb2026;
+}
+
+h3 {
+    color: #cb2026;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h5 {
+    color: #cb2026;
+    margin: 0px 0px 12px 32px;
+}
+
+ul.columns {
+    width: 345px;
+    overflow: hidden;
+    position: static;
+}
+
+ul.columns li {
+    float: left;
+    display: inline;
+    width: 165px;
+    margin: 0px 15px 15px 0px;
+}
+
+ul.columns li.last-child {
+    margin-right: 0px;
+}
+
+ul.columns li img {
+    margin-left: 36px;
+    margin-bottom: 0px !important;
+}
+
+ul.arrows li {
+    padding-left: 55px;
+    background: transparent url("../images/bg-arrow.png") top left no-repeat;
+}
+
+/* @end */
+
+
+/* @group Layout */
+
+#Body.home {
+    position: relative;
+    width: 960px;
+    height: 600px;
+    margin: 0px auto 0px auto;
+}
+
+#Intro {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 960px;
+    height: 600px;
+    z-index: 1;
+}
+
+#Page {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 600px;
+    text-align: left;
+    z-index: 2;
+}
+
+#Page a.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #666;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#Page a.close:hover {
+    color: #333;
+}
+
+#Page #Body {
+    padding: 130px 10px 20px 20px;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+#Page div.content {
+    height: 450px;
+    padding: 0px 10px 0px 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#Page div.content img {
+    margin-bottom: 15px;
+}
+
+#Page div.about {
+    background-color: #cd2027;
+    background-image: url("../images/bg-about.png");
+}
+
+#Page div.contact {
+    background-color: #cd2027;
+    background-image: url("../images/bg-contact.png");
+}
+
+#Page div.marketing {
+    padding-top: 160px;
+    background-color: #fff;
+    background-image: url("../images/bg-marketing.png");
+}
+
+#Page div.marketing div.content {
+    height: 420px;
+}
+
+#Page div.portfolio {
+    padding-top: 180px;
+    background-color: #9a8c7d;
+    background-image: url("../images/bg-portfolio.png");
+}
+
+#Page div.portfolio div.content {
+    height: 400px;
+}
+
+#Page div.promise {
+    background-color: #fff;
+    background-image: url("../images/bg-promise.png");
+}
+
+#Page div.team {
+    background-color: #9a8c7d;
+    background-image: url("../images/bg-team.png");
+}
+
+#Page div.testimonials {
+    background-color: #cd2027;
+    background-image: url("../images/bg-testimonials.png");
+}
+
+span.standby {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 11px;
+    color: #cd2027;
+    z-index: 3;
+}
+
+/* @end */

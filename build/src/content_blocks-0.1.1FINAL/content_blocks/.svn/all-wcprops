@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/DjangoApps/!svn/ver/2347/content_blocks/tags/content_blocks-0.1.1FINAL/content_blocks
+END
+admin.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DjangoApps/!svn/ver/2347/content_blocks/tags/content_blocks-0.1.1FINAL/content_blocks/admin.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DjangoApps/!svn/ver/2347/content_blocks/tags/content_blocks-0.1.1FINAL/content_blocks/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/DjangoApps/!svn/ver/2347/content_blocks/tags/content_blocks-0.1.1FINAL/content_blocks/__init__.py
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DjangoApps/!svn/ver/2347/content_blocks/tags/content_blocks-0.1.1FINAL/content_blocks/utils.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DjangoApps/!svn/ver/2347/content_blocks/tags/content_blocks-0.1.1FINAL/content_blocks/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/DjangoApps/!svn/ver/2347/content_blocks/tags/content_blocks-0.1.1FINAL/content_blocks/models.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/DjangoApps/!svn/ver/2347/content_blocks/tags/content_blocks-0.1.1FINAL/content_blocks/urls.py
+END
+forms.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DjangoApps/!svn/ver/2347/content_blocks/tags/content_blocks-0.1.1FINAL/content_blocks/forms.py
+END

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% load content_blocks_tags %}
+
+{% block title %}Inside Our Team{% endblock %}
+{% block class %}team{% endblock %}
+
+{% block content %}
+{% show_content_block "team" "False" "False" %}
+{% endblock %}

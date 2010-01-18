@@ -52,7 +52,7 @@ fMan.frame[3] = function() { // Copy, Logo
 fMan.frame[4] = function() { // About
     tween_fn(about, "_alpha", 100, 0.5, easeNone);
     
-    about.href = "about.html";
+    about.href = "/about/";
     about.onRelease = launchPage;
 }
 
@@ -63,7 +63,7 @@ fMan.frame[5] = function() { // Box 1
 fMan.frame[6] = function() { // Promise
     tween_fn(promise, "_alpha", 100, 0.5, easeNone);
     
-    promise.href = "promise.html";
+    promise.href = "/promise/";
     promise.onRelease = launchPage;
 }
 
@@ -77,7 +77,7 @@ fMan.frame[7] = function() { // Box 2
 fMan.frame[8] = function() { // Marketing
     tween_fn(marketing, "_alpha", 100, 0.5, easeNone);
     
-    marketing.href = "marketing.html";
+    marketing.href = "/marketing/";
     marketing.onRelease = launchPage;
 }
 
@@ -88,7 +88,7 @@ fMan.frame[9] = function() { // Box 3
 fMan.frame[10] = function() { // Portfolio
     tween_fn(portfolio, "_alpha", 100, 0.5, easeNone);
     
-    portfolio.href = "portfolio.html";
+    portfolio.href = "/portfolio/";
     portfolio.onRelease = launchPage;
 }
 
@@ -99,7 +99,7 @@ fMan.frame[11] = function() { // Box 4
 fMan.frame[12] = function() { // Team
     tween_fn(team, "_alpha", 100, 0.5, easeNone);
     
-    team.href = "team.html";
+    team.href = "/team/";
     team.onRelease = launchPage;
 }
 
@@ -110,7 +110,7 @@ fMan.frame[13] = function() { // Box 5
 fMan.frame[14] = function() { // Testimonials
     tween_fn(testimonials, "_alpha", 100, 0.5, easeNone);
     
-    testimonials.href = "testimonials.html";
+    testimonials.href = "/testimonials/";
     testimonials.onRelease = launchPage;
 }
 
@@ -121,7 +121,7 @@ fMan.frame[15] = function() { // Box 6
 fMan.frame[16] = function() { // Contact
     tween_fn(contact, "_alpha", 100, 0.5, easeNone);
     
-    contact.href = "contact.html";
+    contact.href = "/contact/";
     contact.onRelease = launchPage;
 }
 

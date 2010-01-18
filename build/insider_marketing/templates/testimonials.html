@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% load content_blocks_tags %}
+
+{% block title %}Testimonials{% endblock %}
+{% block class %}testimonials{% endblock %}
+
+{% block content %}
+{% show_content_block "testimonials" "False" "False" %}
+{% endblock %}
