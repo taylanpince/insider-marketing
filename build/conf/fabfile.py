@@ -12,20 +12,20 @@ env.hosts = [
 
 def pack(hash="HEAD"):
     # Create a temporary local directory, export the given commit using git archive
-    local("mkdir ../tmp", capture=False)
-    local("cd ../ && git archive --format=tar --prefix=deploy/ %s build/conf build/src build/lib build/insider_marketing | gzip > tmp/archive.tar.gz" % hash, capture=False)
+    local("mkdir ../../tmp", capture=False)
+    local("cd ../../ && git archive --format=tar --prefix=deploy/ %s build/conf build/src build/lib build/insider_marketing | gzip > tmp/archive.tar.gz" % hash, capture=False)
     
     # Untar the archive to minify js files
-    local("cd ../tmp; tar -xzf archive.tar.gz; rm -f archive.tar.gz", capture=False)
-    local("python /usr/local/lib/yuicompressor/bin/jsminify.py --dir=../tmp/deploy/build/insider_marketing/media/js", capture=False)
+    local("cd ../../tmp; tar -xzf archive.tar.gz; rm -f archive.tar.gz", capture=False)
+    local("python /usr/local/lib/yuicompressor/bin/jsminify.py --dir=../../tmp/deploy/build/insider_marketing/media/js", capture=False)
     
     # Tarball the release again
-    local("cd ../tmp; tar -cf archive.tar deploy; gzip archive.tar")
+    local("cd ../../tmp; tar -cf archive.tar deploy; gzip archive.tar")
 
 
 def deploy():
     # Upload the archive to the server
-    put("../tmp/archive.tar.gz", "%(remote_dir)s/archive.tar.gz" % env)
+    put("../../tmp/archive.tar.gz", "%(remote_dir)s/archive.tar.gz" % env)
     
     with cd(env.remote_dir):
         # Extract the files from the archive, remove the file
@@ -57,4 +57,4 @@ def deploy():
     sudo("/etc/init.d/apache2 restart")
     
     # Remove the temporary local directory
-    local("rm -rf ../tmp", capture=False)
+    local("rm -rf ../../tmp", capture=False)
