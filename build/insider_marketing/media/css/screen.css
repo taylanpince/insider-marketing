@@ -99,6 +99,12 @@ ul.arrows li {
     background: transparent url("../images/bg-arrow.png") top left no-repeat;
 }
 
+img.right {
+    float: right;
+    display: inline;
+    margin: 0px 10px 10px 0px;
+}
+
 /* @end */
 
 
