@@ -68,17 +68,17 @@ fMan.frame[6] = function() { // Promise
 }
 
 fMan.frame[7] = function() { // Box 2
-    tween_fn(box_2, "_alpha", 100, 0.5, easeNone);
+    tween_fn(what_we_do, "_alpha", 100, 0.5, easeNone);
 
-	box_2.href = "http://blog.insidermarketinggroup.ca";
-	box_2.onRelease = launchLink;
+	what_we_do.href = "/what-we-do/";
+	what_we_do.onRelease = launchPage;
 }
 
 fMan.frame[8] = function() { // Marketing
-    tween_fn(marketing, "_alpha", 100, 0.5, easeNone);
+    tween_fn(services, "_alpha", 100, 0.5, easeNone);
     
-    marketing.href = "/marketing/";
-    marketing.onRelease = launchPage;
+    services.href = "/services/";
+    services.onRelease = launchPage;
 }
 
 fMan.frame[9] = function() { // Box 3
@@ -93,7 +93,10 @@ fMan.frame[10] = function() { // Portfolio
 }
 
 fMan.frame[11] = function() { // Box 4
-    tween_fn(box_4, "_alpha", 100, 0.5, easeNone);
+    tween_fn(blog, "_alpha", 100, 0.5, easeNone);
+
+	blog.href = "http://blog.insidermarketinggroup.ca";
+	blog.onRelease = launchLink;
 }
 
 fMan.frame[12] = function() { // Team
@@ -104,7 +107,10 @@ fMan.frame[12] = function() { // Team
 }
 
 fMan.frame[13] = function() { // Box 5
-    tween_fn(box_5, "_alpha", 100, 0.5, easeNone);
+    tween_fn(projects, "_alpha", 100, 0.5, easeNone);
+
+	projects.href = "/current-projects/";
+	projects.onRelease = launchPage;
 }
 
 fMan.frame[14] = function() { // Testimonials
@@ -115,7 +121,10 @@ fMan.frame[14] = function() { // Testimonials
 }
 
 fMan.frame[15] = function() { // Box 6
-    tween_fn(box_6, "_alpha", 100, 0.5, easeNone);
+    tween_fn(giving_back, "_alpha", 100, 0.5, easeNone);
+
+	giving_back.href = "/giving-back/";
+	giving_back.onRelease = launchPage;
 }
 
 fMan.frame[16] = function() { // Contact

@@ -211,6 +211,26 @@ img.right {
     background-image: url("../images/bg-testimonials.png");
 }
 
+#Page div.services {
+    background-color: #cd2027;
+    background-image: url("../images/bg-services.png");
+}
+
+#Page div.what_we_do {
+    background-color: #cd2027;
+    background-image: url("../images/bg-what-we-do.png");
+}
+
+#Page div.current_projects {
+    background-color: #cd2027;
+    background-image: url("../images/bg-current-projects.png");
+}
+
+#Page div.giving_back {
+    background-color: #cd2027;
+    background-image: url("../images/bg-giving-back.png");
+}
+
 span.standby {
     position: absolute;
     top: 10px;

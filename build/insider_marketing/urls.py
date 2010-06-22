@@ -31,10 +31,25 @@ urlpatterns = patterns('',
         "template": "portfolio.html",
     }, name="portfolio"),
     
-    # Marketing
-    url(r"^marketing/$", "django.views.generic.simple.direct_to_template", {
-        "template": "marketing.html",
-    }, name="marketing"),
+    # Services
+    url(r"^services/$", "django.views.generic.simple.direct_to_template", {
+        "template": "services.html",
+    }, name="services"),
+    
+    # What We Do
+    url(r"^what-we-do/$", "django.views.generic.simple.direct_to_template", {
+        "template": "what_we_do.html",
+    }, name="what_we_do"),
+    
+    # Current Projects
+    url(r"^current-projects/$", "django.views.generic.simple.direct_to_template", {
+        "template": "current_projects.html",
+    }, name="current_projects"),
+    
+    # Giving Back
+    url(r"^giving-back/$", "django.views.generic.simple.direct_to_template", {
+        "template": "giving_back.html",
+    }, name="giving_back"),
     
     # Testimonials
     url(r"^testimonials/$", "django.views.generic.simple.direct_to_template", {
