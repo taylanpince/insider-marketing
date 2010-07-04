@@ -55,6 +55,13 @@ INSTALLED_APPS = (
     'content_blocks',
 )
 
+TINYMCE_DEFAULT_CONFIG = {
+    'theme': 'advanced',
+    'theme_advanced_buttons1': 'bold,italic,underline,separator,link,unlink,separator,fontselect,fontsizeselect',
+    'theme_advanced_buttons2': '',
+    'theme_advanced_buttons3': '',
+}
+
 try:
     from settings_local import *
 except:
