@@ -16,11 +16,11 @@ def pack(hash="HEAD"):
     local("cd ../../ && git archive --format=tar --prefix=deploy/ %s build/conf build/src build/lib build/insider_marketing | gzip > tmp/archive.tar.gz" % hash, capture=False)
     
     # Untar the archive to minify js files
-    local("cd ../../tmp; tar -xzf archive.tar.gz; rm -f archive.tar.gz", capture=False)
-    local("python /usr/local/lib/yuicompressor/bin/jsminify.py --dir=../../tmp/deploy/build/insider_marketing/media/js", capture=False)
+    #local("cd ../../tmp; tar -xzf archive.tar.gz; rm -f archive.tar.gz", capture=False)
+    #local("python /usr/local/lib/yuicompressor/bin/jsminify.py --dir=../../tmp/deploy/build/insider_marketing/media/js", capture=False)
     
     # Tarball the release again
-    local("cd ../../tmp; tar -cf archive.tar deploy; gzip archive.tar")
+    #local("cd ../../tmp; tar -cf archive.tar deploy; gzip archive.tar")
 
 
 def deploy():
